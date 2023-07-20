@@ -201,8 +201,8 @@ class MediaFile:
         Returns:
             bool: True if the output file can contain video, False otherwise
         """
-        if self.output_ext.lower() in AUDIO_ONLY_FORMATS:
-            return False
+        # if self.output_ext.lower() in AUDIO_ONLY_FORMATS:
+        #     return False
 
         return not self.ffmpeg_normalize.video_disable
 
